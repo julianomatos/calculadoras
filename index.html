@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadoras</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadoras</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Calculadora Básica</h2>
+            <form>
+                <input type="number" id="num1" placeholder="Digite o primeiro número">
+                <input type="number" id="num2" placeholder="Digite o segundo número">
+                <button type="button" onclick="somar()">Somar</button>
+                <button type="button" onclick="subtrair()">Subtrair</button>
+                <button type="button" onclick="multiplicar()">Multiplicar</button>
+                <button type="button" onclick="dividir()">Dividir</button>
+                <button type="button" onclick="limpar()">Limpar</button>
+                <p id="resultado"></p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Calculadora de Notas</h2>
+            <form>
+                <input onblur="verificarAp1()" type="number" id="ap1" placeholder="Digite a primeira nota">
+                <input onblur="verificarAp2()" type="number" id="ap2" placeholder="Digite a segunda nota">
+                <input onblur="verificarAs()" type="number" id="as" placeholder="Digite a terceira nota">
+                <button type="button" onclick="calcular()">Calcular</button>
+                <p id="notaFinal"></p>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
